@@ -8,9 +8,11 @@ version: 1.1.0
 
 ## Select the host
 
-Use the active runtime's host and client information to select Codex or Claude Code automatically. For diagnosis, honor any explicitly identified source client for the affected run. For setup or effort advice, honor a different target only if the user explicitly names it. A model name, a CLI installed on disk, or config files in the repository alone do not identify the active host.
+Use the client that produced the affected run, if the user identified it. Otherwise, use the active client as the default and say so if that assumption matters. Usage from a different client may require a different report.
 
-For Codex, follow `references/codex-usage.md`. The steps below apply to Claude Code. If the host is unknown, diagnose from any usage evidence already supplied. Ask for the affected client only if you need a client-specific report or control.
+If the client is still unclear, diagnose from the supplied evidence and ask only if you need a client-specific report or control. For Codex, follow `references/codex-usage.md`. For Claude Code, continue below.
+
+## Claude Code
 
 Anthropic's Claude Code team reviewed the session IDs people shared in late October 2026 and found no single root cause and no regression. Most fast drains traced to one or two heavy sessions, plus a few smaller token-burn issues Anthropic said it was rolling out fixes for. This skill follows that finding: locate the heavy session first, and treat a product bug as the last explanation, not the first.
 

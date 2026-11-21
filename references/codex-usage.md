@@ -15,4 +15,4 @@ Use this branch for a Codex run or usage window that already happened.
 
 5. If usage still looks unexplained after the comparable check, suggest sending a redacted summary via the client's feedback or support path. In the app, `/feedback` opens the dialog. Let the user decide whether to attach logs. Route plan limits, rate cards, and API billing to current official product documentation.
 
-[Desktop commands](https://learn.chatgpt.com/docs/app/slash-commands) · [CLI commands](https://learn.chatgpt.com/docs/developer-commands?surface=cli) · [Codex usage and pricing](https://learn.chatgpt.com/docs/pricing)
+[Desktop commands](https://learn.chatgpt.com/docs/app/slash-commands) · [CLI commands](https://learn.chatgpt.com/docs/developer-commands?surface=cli) · [Codex usage and pricing](https://learn.chatgpt.com/docs/pricing) · [Fast and Ultrafast](https://learn.chatgpt.com/docs/agent-configuration/speed)

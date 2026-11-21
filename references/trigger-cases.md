@@ -1,6 +1,6 @@
 # Trigger cases: diagnose-usage
 
-Status: all 13 cases hand-read against the descriptions of `diagnose-usage`, `choose-effort` and `product-self-knowledge` on 2026-10-29. No live session and no automated triggering loop was run, so "pass" means the description's wording supports the expected result, not that an agent was observed loading or skipping the skill.
+Status: 19 cases reviewed manually. D1-D13 were reviewed on 2026-10-29 and checked against the current descriptions alongside D14-D19. No live session and no automated triggering loop was run, so "pass" means the description's wording supports the expected result, not that an agent was observed loading or skipping the skill.
 
 | # | Prompt | Expect | Kind | Hand-read | Why |
 |---|---|---|---|---|---|
@@ -23,7 +23,5 @@ Status: all 13 cases hand-read against the descriptions of `diagnose-usage`, `ch
 | D17 | Set up a cheaper reader model for all my Codex projects | no load, use setup-claude-advisor | boundary | pass | Persistent model configuration |
 | D18 | How much does my Codex plan include? | no load, use official docs | near-miss | pass | Plan allowance |
 | D19 | Why did yesterday's run eat my limit? (active host: Claude Code) | load | runtime | pass | Requests the Claude Code usage breakdown without asking the user to pick a host |
-
-Cases D14-D18 were reviewed manually against the updated descriptions.
 
 Boundary pairs: D1 against D9 (after versus before the work); D4 against D12 (a session that ran versus use less from now on), whose other side is C11 in `choose-effort`.
