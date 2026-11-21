@@ -9,7 +9,7 @@ Use this branch for a Codex run or usage window that already happened.
 
 | Evidence to look for | Candidate cause | One change to compare |
 |---|---|---|
-| Several overlapping subagent threads or long cloud or goal activity around the drop | Repeated model and tool work across agents or turns | Compare one-agent and delegated runs with equivalent inputs and the same model and effort where possible. Use a mode that allows explicit delegation for both arms and verify actual agent activity |
+| Several overlapping subagent threads or long cloud or goal activity around the drop | Repeated model and tool work across agents or turns | Compare one-agent and delegated runs with equivalent inputs and the same model and effort where possible. Use the same mode with explicit delegation and no proactive fan-out for both runs. Confirm the control run used one agent and the comparison run delegated |
 | Long-running chat or large repeated file reads and tool outputs | Higher context or retrieval load | Start a focused chat with a concise handoff and narrow inputs |
 | Higher effort, a different model, or Fast or Ultrafast confirmed on the affected run | Different reasoning load or usage rates | Change one setting and compare equivalent work in the same account and window |
 
