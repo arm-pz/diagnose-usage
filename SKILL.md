@@ -16,14 +16,14 @@ If the client is still unclear, diagnose from the supplied evidence and ask only
 
 Anthropic's Claude Code team reviewed the session IDs people shared in late October 2026 and found no single root cause and no regression. Most fast drains traced to one or two heavy sessions, plus a few smaller token-burn issues Anthropic said it was rolling out fixes for. This skill follows that finding: locate the heavy session first, and treat a product bug as the last explanation, not the first.
 
-## Ground rules
+### Ground rules
 
 - **Find the session before the setting.** Fast drains usually come from one or two sessions. Changing global settings for all work fixes the wrong thing and makes everything else worse.
 - **Never promise a bug or a fix.** Say "update Claude Code, then re-check `/usage`", not "this is a known bug". Anthropic did not find a single cause.
 - **Don't run slash commands for the user.** `/usage`, `/effort` and `/feedback` are built-ins the user types. Ask for the pasted output; do not guess at numbers.
 - **Check names before you say them.** Effort levels, flags and features in Claude Code change month to month. If a level, flag or command is not in the user's paste or the current docs, say you could not confirm it. The docs map is in the `product-self-knowledge` skill when it is installed.
 
-## Workflow
+### Workflow
 
 1. Ask once, in one message: which session or day, when the drain started, and which of these they used: goal mode, workflows, agent teams, subagents, an SDK or headless job, a raised effort level. Skip anything they already said.
 2. Ask the user to run `/usage` and paste the result. It shows where a session's tokens went; without it any ranking is a guess.
@@ -33,7 +33,7 @@ Anthropic's Claude Code team reviewed the session IDs people shared in late Octo
 
 `references/trigger-cases.md` holds the test cases. Open it only when tuning the description above.
 
-## Report
+### Report
 
 Up to three culprits, ranked. Each one: what the paste shows, why that costs a lot, and one change. Then one next step. Mark which findings came from the user's paste and which are general causes you could not confirm from it.
 
