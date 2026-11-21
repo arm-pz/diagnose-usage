@@ -22,6 +22,7 @@ Status: all 13 cases hand-read against the descriptions of `diagnose-usage`, `ch
 | D16 | Should I use Ultra or High for tomorrow's Codex migration? | no load, use choose-effort | boundary | pass | Upcoming task |
 | D17 | Set up a cheaper reader model for all my Codex projects | no load, use setup-claude-advisor | boundary | pass | Persistent model configuration |
 | D18 | How much does my Codex plan include? | no load, use official docs | near-miss | pass | Plan allowance |
+| D19 | Why did yesterday's run eat my limit? (active host: Claude Code) | load | runtime | pass | Requests the Claude Code usage breakdown without asking the user to pick a host |
 
 Cases D14-D18 were reviewed manually against the updated descriptions.
 

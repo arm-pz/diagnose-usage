@@ -1,6 +1,6 @@
 # diagnose-usage
 
-An agent skill for Claude Code and Codex that diagnoses unexpected usage after a run. It compares the run with the evidence you have, gives up to three supported causes, and recommends one change to test per cause.
+An agent skill for Claude Code and Codex that diagnoses unexpected usage after a run. It selects the relevant client workflow automatically from the run or session context. It compares the run with the evidence you have, gives up to three supported causes, and recommends one change to test per cause.
 
 In Claude Code, provide the relevant usage breakdown. In Codex, start with the affected usage window and add session or turn data if available. See the [Codex usage workflow](references/codex-usage.md).
 
