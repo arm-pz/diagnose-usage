@@ -17,5 +17,12 @@ Status: all 13 cases hand-read against the descriptions of `diagnose-usage`, `ch
 | D11 | Speed up my Node build | no load | unrelated | pass | Not usage |
 | D12 | How can I use less in Claude Code from now on? | no load, use choose-effort | boundary | pass | Going forward, no past session |
 | D13 | Claude.ai says I've hit my message limit, why? | no load | near-miss | pass | Claude.ai chat, not Claude Code |
+| D14 | Why did yesterday's Codex automation burn through my limit? | load | clear | pass | A finished run with an affected usage window |
+| D15 | My quota dropped after an Ultra run. What did each agent cost? | load | clear | pass | Account data alone cannot attribute subagent cost |
+| D16 | Should I use Ultra or High for tomorrow's Codex migration? | no load, use choose-effort | boundary | pass | Upcoming task |
+| D17 | Set up a cheaper reader model for all my Codex projects | no load, use setup-claude-advisor | boundary | pass | Persistent model configuration |
+| D18 | How much does my Codex plan include? | no load, use official docs | near-miss | pass | Plan allowance |
+
+Cases D14-D18 were reviewed manually against the updated descriptions.
 
 Boundary pairs: D1 against D9 (after versus before the work); D4 against D12 (a session that ran versus use less from now on), whose other side is C11 in `choose-effort`.
